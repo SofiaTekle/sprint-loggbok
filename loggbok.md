@@ -25,3 +25,21 @@ Jag har också skapat en betalningslösning med Stripe på backend. Där har jag
 - Under den här veckan var arbetet lite annorlunda, det var lite svårare att dela upp arbetet i items och bestämma vem som skulle ansvara för vilka delar. Men vi löste det till slut.
 - Under retrospektivet diskuterade vi att vi hade hoppat över två daily scrums under veckan, eftersom vi upplevde att kommunikationen i chatten fungerade bra. Vi kom ändå fram till att det är viktigt att försöka hålla fast vid våra planerade daily scrums. Även om chatten fungerar bra som kommunikation, så är daily scrums värdefulla eftersom det ger oss gemensam avstämning där vi kan berätta vad vi har gjort hittills, vad som återstår och lyfta hinder.
 - Sammantaget har jag fått en bättre bild av hur agilt arbete fungerar. Det handlar inte bara om att dela upp arbetsuppgifter och utveckla funktioner, utan också om att kontinuerligt följa upp arbetet, samarbeta och anpassa arbetssättet.
+
+
+## Sprint 5 – vecka 43
+
+### Vad jag arbetade med
+
+- Denna vecka har jag arbetat med JWT-cookie i gatewayn och frontend. Gatewayn sparar nu tokenen i en HttpOnly-cookie vid inloggning i stället för att tokenen hanteras och lagras på frontend. På frontend lade jag bland annat till credentials: "include" i anropen till gatewayn och tog bort lagring av tokenen samt Authorization-headern.
+- Jag har även undersökt hur Playwright kan användas för att testa ett fullständigt flöde i en riktig webbläsare mot den faktiska backendmiljön. Jag skapade också ett test som omfattar inloggning och visning av produkter. 
+
+### Eventuella problem och hur jag löste dem
+
+- Denna vecka tog jag med min laptop till skolan och behövde därför klona ner projektet från GitHub. Jag fick problem med att köra projektet i IntelliJ och försökte felsöka det själv. Till slut frågade jag Håkan om hjälp, och han kom fram till att problemet låg i Maven Wrapper. Jag bytte till den vanliga Maven-installationen i stället, vilket löste problemet så att jag kunde fortsätta arbeta. 
+
+### Samarbete och agilt arbete
+
+- Sprintplaneringen och retrospektivet har fungerat som vanligt denna vecka. Under förra veckans retro kom vi fram till att vi skulle försöka hålla daily scrums tisdag till torsdag. Vi följde nästan planen, men missade tisdagen eftersom jag inte kunde delta då. Vi kommer att fortsätta sikta på daily scrums tisdag till torsdag nästa vecka.
+- Samarbetet i gruppen fungerar även bra denna vecka. Det är enkelt och smidigt att arbeta tillsammans eftersom alla är engagerade och tar ansvar för sitt eget arbete. Alla bidrar aktivt till gruppens arbete, och om någon har en fråga eller behöver hjälp är alla villiga att hjälpa till.
+
