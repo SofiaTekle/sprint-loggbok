@@ -43,3 +43,23 @@ Jag har också skapat en betalningslösning med Stripe på backend. Där har jag
 - Sprintplaneringen och retrospektivet har fungerat som vanligt denna vecka. Under förra veckans retro kom vi fram till att vi skulle försöka hålla daily scrums tisdag till torsdag. Vi följde nästan planen, men missade tisdagen eftersom jag inte kunde delta då. Vi kommer att fortsätta sikta på daily scrums tisdag till torsdag nästa vecka.
 - Samarbetet i gruppen fungerar även bra denna vecka. Det är enkelt och smidigt att arbeta tillsammans eftersom alla är engagerade och tar ansvar för sitt eget arbete. Alla bidrar aktivt till gruppens arbete, och om någon har en fråga eller behöver hjälp är alla villiga att hjälpa till.
 
+
+## Sprint 6 – vecka 44
+
+### Vad jag arbetade med
+
+- Jag har arbetat med informationsbannern som förklarar att nödvändig HttpOnly-cookie används för inloggning och säker åtkomst. Information om cookies finns även som en länk i footern, så att man kan läsa den i efterhand eller om man råkat stänga ner bannern. Komponenten CookieInfoBanner innehåller bland annat logik för att visa bannern vid första renderingen och dölja den när användaren stänger den.
+- Jag finputsade frontendens design, främst styling av knappar och justeringar inuti produktkorten med flexbox och centrering. Jag lade till media queries så att sidan ser bra ut på de flesta skärmstorlekar och mobiler. 
+- Jag lade även till att man efter en beställning med Stripe kan se vilka produkter man har beställt. Tidigare visades bara texten "Tack för din beställning", men inte själva produkterna.
+- Jag har även dokumenterat backend med Javadoc för product-service och driftsatt frontend på Render.
+
+### Eventuella problem och hur jag löste dem
+
+- När jag driftsatte frontend på Render fungerade inte cookien som tänkt. Det berodde på att den senaste imagen av gateway-applikationen, som sätter HttpOnly-cookien, inte var driftsatt. En gruppmedlem fixade det snabbt och då fungerade det som det skulle.
+
+### Samarbete och agilt arbete
+
+- Samarbetet denna vecka har gått fint. Vi har hållit våra planerade daily scrums och genomfört vårt sista retrospektiv. På retrospektivet hade vi egentligen inte mycket att tillägga, eftersom vi upplevde att kommunikationen och vårt arbetssätt kring Trello, pull requests och liknande har förbättrats och fungerar bra idag. Sista sprintveckan har sammantaget gått bra och varit något enklare, eftersom items i backloggen inte var lika tunga som under tidigare veckor.
+- Vårt arbetssätt har överlag blivit smidigare från vecka till vecka, och jag har fått en bred förståelse för hur samarbetet fungerar när man utvecklar en applikation. Genom daily scrums får man en tydlig bild av vad som fungerar och inte fungerar, och man kan ta upp funderingar i samband med avstämningen. Det jag upplevt som lite utmanande, särskilt i början, är estimering av story points. Man har ingen tydlig bild på förhand av hur svår eller enkel en item i backloggen faktiskt är, så det har hänt att man över- eller underskattat. Jag vill dock tillägga att det blev lite lättare att estimera för varje vecka.
+
+
